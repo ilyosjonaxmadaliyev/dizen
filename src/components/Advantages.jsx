@@ -45,7 +45,7 @@ function Advantages() {
           </p>
         </div>
       </div>
-      <div className="bg-[url('../../public/image-2.png')] rounded-xl bg-cover bg-no-repeat bg-center grid lg:grid-cols-2 py-16 px-32 lg:py-24 lg:px-44">
+      <div className="bg-[url('https://cdn1.img.sputniknews.uz/img/1387/00/13870013_0:7:3072:1937_1920x0_80_0_0_3e6ba6e88525a7780e12a9eb94308103.jpg')] rounded-xl bg-cover bg-no-repeat bg-center grid lg:grid-cols-2 py-16 px-32 lg:py-24 lg:px-44">
         <div className=""></div>
         <div data-aos="fade-left" className="">
           <h3 className="font-unbounded text-white text-4xl mb-7">
