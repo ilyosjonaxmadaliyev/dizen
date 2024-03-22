@@ -4,26 +4,24 @@ import "aos/dist/aos.css";
 
 AOS.init();
 
-import {
-  Advantages,
-  Faq,
-  Footer,
-  Header,
-  Hero,
-  Services,
-} from "./components";
-
+import { Advantages, Faq, Footer, Header, Hero, Services } from "./components";
+import { BsTelephone } from "react-icons/bs";
 
 function App() {
   return (
-    <div className="">
+    <>
       <Header />
       <Hero />
       <Advantages />
       <Services />
       <Faq />
       <Footer />
-    </div>
+      <a href="tel:998 94 099 3434">
+        <span>
+          <BsTelephone className="border fixed lg:hidden rounded-xl text-white bg-blue-400 p-2 text-5xl right-14 bottom-10 z-50" />
+        </span>
+      </a>
+    </>
   );
 }
 

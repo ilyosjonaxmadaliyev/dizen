@@ -1,18 +1,21 @@
-import logo from "../../public/logo.png";
+import logo from "../../public/logo.jpg";
 import { IoLocationOutline } from "react-icons/io5";
 import { BsTelephone } from "react-icons/bs";
+import { useTranslation } from "react-i18next";
+
 
 function Footer() {
+  const [t] = useTranslation("global");
   return (
     <div className="custom-container">
       <div id="faq" className="lg:flex mb-14">
         <div className="mr-auto mb-14">
-          <img src={logo} alt="" />
+          <img className="h-10 lg:h-14" src={logo} alt="" />
         </div>
         <div className="">
           <div className="flex items-center gap-4 mb-4">
             <IoLocationOutline className="border rounded-md p-1 text-3xl" />
-            <p>Toshkent shahri Yashnabod tumani Mo’ljal Sergeli-4 bekat</p>
+            <p>{ t ('locatsion')}</p>
           </div>
           <div className="flex items-center gap-4">
             <BsTelephone className="border rounded-md p-1 text-3xl" />

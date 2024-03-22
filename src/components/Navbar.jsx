@@ -1,7 +1,10 @@
 import Button from "./Button";
 import { GrClose } from "react-icons/gr";
+import { useTranslation } from "react-i18next";
+
 
 function Navbar({ setShow }) {
+  const [t] = useTranslation("global");
   return (
     <div
       onClick={() => setShow(false)}
@@ -14,19 +17,19 @@ function Navbar({ setShow }) {
         />
         <ul className="flex-col font-unbounded text-xl my-16 text-slate-600">
           <li className="mb-6">
-            <a href="#home">Asosiy</a>
+            <a href="#home">{t("asosiy")}</a>
           </li>
           <li className="mb-6">
-            <a href="#advantages">Afzalliklar</a>
+            <a href="#advantages">{t("afzal")}</a>
           </li>
           <li className="mb-6">
-            <a href="#services">Xizmatlar</a>
+            <a href="#services">{t("xizmat")}</a>
           </li>
           <li>
-            <a href="#faq">FAQ</a>
+            <a href="#faq">{t("faq")}</a>
           </li>
         </ul>
-        <Button text={"Bog'lanish"} />
+        <Button />
       </div>
     </div>
   );
