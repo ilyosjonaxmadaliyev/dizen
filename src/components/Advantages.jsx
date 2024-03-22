@@ -10,7 +10,7 @@ function Advantages() {
     <div id="advantages" className="custom-container mb-24">
       <h2
         data-aos="fade-right"
-        className="font-unbounded text-3xl lg:text-5xl text-red-700 border-b-2 border-black/30 leading-[70px] mb-14"
+        className="font-unbounded text-xl md:text-3xl lg:text-5xl text-red-700 border-b-2 border-black/30 leading-[70px] mb-14"
       >
         {t("afzal")}
       </h2>

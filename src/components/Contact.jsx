@@ -17,10 +17,10 @@ function Contact() {
   return (
     <div
       id="contact"
-      className="grid lg:grid-cols-2 gap-16 bg-[#33A9FF] mb-24 lg:px-10 px-4 lg:pt-10 pt-4 rounded-xl"
+      className="grid lg:grid-cols-2 gap-16 bg-[#33A9FF] mb-24 lg:px-10 md:px-4 lg:pt-10 md:pt-4 rounded-xl"
     >
-      <div className="bg-white rounded-xl p-4 lg:p-8 mb-4 lg:mb-10">
-        <h3 className="font-unbounded text-xl lg:text-2xl text-[#020C31] mb-6 font-bold">
+      <div className="bg-white rounded-xl md:p-4 lg:p-8 md:mb-4 lg:mb-10">
+        <h3 className="font-unbounded text-lg lg:text-2xl text-[#020C31] mb-6 font-bold">
           {t("formTitle")}
         </h3>
         <form action="">

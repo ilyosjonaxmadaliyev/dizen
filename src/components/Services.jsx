@@ -20,7 +20,7 @@ function Services() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
           <div data-aos="fade-right" className="p-4 bg-slate-100 rounded-xl">
             <img className="w-28 mb-4" src={group1} alt="" />
-            <h4 className="font-unbounded text-2xl text-[#020C31] mb-2 font-bold">
+            <h4 className="font-unbounded text-xl md:text-2xl text-[#020C31] mb-2 font-bold">
               {t("xizmat1")}
             </h4>
             <h6 className="text-[#676D83] font-font-sansSerif text-sm font-bold mb-2">
@@ -29,7 +29,7 @@ function Services() {
           </div>
           <div data-aos="fade-right" className="p-4 bg-slate-100 rounded-xl">
             <img className="w-28 mb-4" src={group2} alt="" />
-            <h4 className="font-unbounded text-2xl text-[#020C31] mb-2 font-bold">
+            <h4 className="font-unbounded text-xl md:text-2xl text-[#020C31] mb-2 font-bold">
               {t("xizmat2")}
             </h4>
             <h6 className="text-[#676D83]  font-sansSerifd text-sm font-bold mb-2">
@@ -38,7 +38,7 @@ function Services() {
           </div>
           <div data-aos="fade-right" className="p-4 bg-slate-100 rounded-xl">
             <img className="w-28 mb-4" src={group3} alt="" />
-            <h4 className="font-unbounded text-2xl text-[#020C31] mb-2 font-bold">
+            <h4 className="font-unbounded text-xl md:text-2xl text-[#020C31] mb-2 font-bold">
               {t("xizmat3")}
             </h4>
             <h6 className="text-[#676D83]  font-sansSerifd text-sm font-bold mb-2">
