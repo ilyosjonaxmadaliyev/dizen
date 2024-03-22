@@ -1,8 +1,19 @@
 import faqImage from "../../public/faq-image.png";
 import { useTranslation } from "react-i18next";
+import { useState } from "react";
 
 function Contact() {
   const [t] = useTranslation("global");
+
+  const [ok, setOk] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setOk("✓ Ssuccess");
+    setTimeout(() => {
+      setOk("");
+    }, 3000);
+  };
   return (
     <div
       id="contact"
@@ -21,11 +32,15 @@ function Contact() {
           <input
             className="bg-[#F3F6F6] w-full outline-none rounded-xl p-2 mb-24"
             placeholder="+998 |"
-            type="text"
+            type="number"
           />
-          <button className="cursor-pointer text-center font-unbounded bg-black/80 py-2 lg:text-xl px-12 rounded-xl text-white hover:bg-black/65 duration-100">
+          <button
+            onClick={handleSubmit}
+            className="cursor-pointer text-center font-unbounded bg-black/80 py-2 lg:text-xl px-12 rounded-xl text-white hover:bg-black/65 duration-100"
+          >
             {t("submit")}
           </button>
+          <p className="text-red-800 text-xl">{ok}</p>
         </form>
       </div>
       <div className="hidden lg:block">
