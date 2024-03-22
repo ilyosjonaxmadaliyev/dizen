@@ -52,16 +52,18 @@ function Advantages() {
           </p>
         </div>
       </div>
-      <div className="bg-[url('https://cdn1.img.sputniknews.uz/img/1387/00/13870013_0:7:3072:1937_1920x0_80_0_0_3e6ba6e88525a7780e12a9eb94308103.jpg')] rounded-xl bg-cover bg-no-repeat bg-center grid lg:grid-cols-2 py-16 px-4 lg:py-16 lg:px-32">
-        <div className="hidden lg:flex"></div>
-        <div data-aos="fade-right" className="">
-          <h3 className="font-unbounded text-white text-2xl lg:text-4xl mb-7">
-            {t("afzalInfo")}
-          </h3>
-          <p className="text-lg text-white mb-20 lg:mb-40">
-            {t("afzalInfoDoc")}
-          </p>
-          <Button text={"Bog'lanish"} href={"#contact"} />
+      <div className="advantageBg">
+        <div className="grid lg:grid-cols-2  py-16 px-4 lg:py-16 lg:px-32 rounded-xl bg-black/30 w-full">
+          <div className="hidden lg:flex"></div>
+          <div data-aos="fade-right" className="">
+            <h3 className="font-unbounded text-white text-2xl lg:text-4xl mb-7">
+              {t("afzalInfo")}
+            </h3>
+            <p className="text-lg text-white mb-20 lg:mb-40">
+              {t("afzalInfoDoc")}
+            </p>
+            <Button text={"Bog'lanish"} href={"#contact"} />
+          </div>
         </div>
       </div>
     </div>

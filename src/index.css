@@ -16,3 +16,15 @@
     @apply mx-auto w-full max-w-[1280px] px-8;
   }
 }
+.heroBg {
+  background: url("../public/image1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+.advantageBg {
+  background: url("../public/image2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+}
