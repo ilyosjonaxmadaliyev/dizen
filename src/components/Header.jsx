@@ -24,16 +24,16 @@ function Header() {
         </a>
         <div className="flex gap-5">
           <ul className="gap-5 font-sansSerif hidden lg:flex">
-            <li>
+            <li className="hover:text-red-500 text-red-700 font-bold text-lg">
               <a href="#home">{t("asosiy")}</a>
             </li>
-            <li>
+            <li className="hover:text-red-500 text-red-700 font-bold text-lg">
               <a href="#advantages">{t("afzalliklar")}</a>
             </li>
-            <li>
+            <li className="hover:text-red-500 text-red-700 font-bold text-lg">
               <a href="#services">{t("xizmatlar")}</a>
             </li>
-            <li>
+            <li className="hover:text-red-500 text-red-700 font-bold text-lg">
               <a href="#faq">{t("faq")}</a>
             </li>
           </ul>
