@@ -11,6 +11,7 @@ function App() {
   return (
     <>
       <Header />
+      <div className="lg:h-48 md:h-36 h-32"></div>
       <Hero />
       <Advantages />
       <Services />

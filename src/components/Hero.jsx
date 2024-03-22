@@ -6,18 +6,18 @@ import Button from "./Button";
 function Hero() {
   const [t] = useTranslation("global");
   return (
-    <div className="pt-32 lg:pt-40 lg:pb-24 mb-20 custom-container ">
+    <div className="lg:pb-24 mb-10 custom-container ">
       <div
         id="home"
-        className="lg:p-0 rounded-xl grid lg:grid-cols-2 heroBg lg:bg-none"
+        className="rounded-xl grid lg:grid-cols-2 heroBg lg:bg-none"
       >
-        <div className="p-4 rounded-xl bg-black/50 lg:bg-black/0 w-full">
+        <div className="rounded-xl p-4 lg:p-0 bg-black/50 lg:bg-black/0 w-full">
           <div data-aos="fade-right" className=" w-full">
-            <h1 className="text-white lg:text-[#3375FF] font-bold font-unbounded text-3xl md:text-5xl lg:text-6xl mb-11">
+            <h1 className="text-white lg:text-red-800 font-bold font-unbounded text-3xl md:text-5xl lg:text-6xl mb-11">
               {t("heroTitle")}
             </h1>
 
-            <p className="text-white lg:text-[#676D83] font-bold text-lg md:text-xl lg:text-2xl lg:w-[400px] mb-16 lg:mb-48">
+            <p className="text-white lg:text-black font-bold font-sansSerif text-base md:text-lg lg:text-xl lg:w-[400px] mb-8 lg:mb-16">
               {t("heroDoc")}
             </p>
 

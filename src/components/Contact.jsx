@@ -30,7 +30,7 @@ function Contact() {
             type="text"
           />
           <input
-            className="bg-[#F3F6F6] w-full outline-none rounded-xl p-2 mb-24"
+            className="bg-[#F3F6F6] w-full outline-none rounded-xl p-2 mb-12"
             placeholder="+998 |"
             type="number"
           />
@@ -44,7 +44,7 @@ function Contact() {
         </form>
       </div>
       <div className="hidden lg:block">
-        <h3 className="font-unbounded text-white text-3xl mb-2">
+        <h3 className="font-unbounded text-red-700 text-3xl mb-2">
           {t("formTitle2")}
         </h3>
         <img className="bottom-0" src={faqImage} alt="" />

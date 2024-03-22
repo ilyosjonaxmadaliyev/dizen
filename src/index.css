@@ -16,6 +16,9 @@
     @apply mx-auto w-full max-w-[1280px] px-8;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
 .heroBg {
   background: url("../public/image1.png");
   background-repeat: no-repeat;

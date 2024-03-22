@@ -13,51 +13,50 @@ function Services() {
       <div className="mb-24">
         <h3
           data-aos="fade-right"
-          className="font-unbounded text-3xl lg:text-5xl text-[#020C31] mb-24"
+          className="font-unbounded text-3xl lg:text-5xl text-red-700 mb-24 border-b-2 border-black/30"
         >
           {t("xizmat")}
         </h3>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-          <div data-aos="fade-right" className="p-4 bg-[#d9ebeb] rounded-xl">
+          <div data-aos="fade-right" className="p-4 bg-slate-100 rounded-xl">
             <img className="w-28 mb-4" src={group1} alt="" />
             <h4 className="font-unbounded text-2xl text-[#020C31] mb-2 font-bold">
               {t("xizmat1")}
             </h4>
-            <h6 className="text-[#3375FF] text-bold font-unbounded text-sm font-bold mb-2">
+            <h6 className="text-[#676D83] font-font-sansSerif text-sm font-bold mb-2">
               {t("xizmatDoc1")}
             </h6>
           </div>
-          <div data-aos="fade-right" className="p-4 bg-[#d9ebeb] rounded-xl">
+          <div data-aos="fade-right" className="p-4 bg-slate-100 rounded-xl">
             <img className="w-28 mb-4" src={group2} alt="" />
             <h4 className="font-unbounded text-2xl text-[#020C31] mb-2 font-bold">
               {t("xizmat2")}
             </h4>
-            <h6 className="text-[#3375FF] text-bold font-unbounded text-sm font-bold mb-2">
+            <h6 className="text-[#676D83]  font-sansSerifd text-sm font-bold mb-2">
               {t("xizmatDoc2")}
             </h6>
           </div>
-          <div data-aos="fade-right" className="p-4 bg-[#d9ebeb] rounded-xl">
+          <div data-aos="fade-right" className="p-4 bg-slate-100 rounded-xl">
             <img className="w-28 mb-4" src={group3} alt="" />
             <h4 className="font-unbounded text-2xl text-[#020C31] mb-2 font-bold">
               {t("xizmat3")}
             </h4>
-            <h6 className="text-[#3375FF] text-bold font-unbounded text-sm font-bold mb-2">
+            <h6 className="text-[#676D83]  font-sansSerifd text-sm font-bold mb-2">
               {t("xizmatDoc3")}
             </h6>
           </div>
         </div>
       </div>
       <div className="grid lg:grid-cols-2 p-6 gap-24 bg-[#33A9FF] mb-24 rounded-xl">
-        <img className="rounded-xl hidden lg:flex" src={image3} alt="" />
+        <img className="rounded-xl h-full hidden lg:flex" src={image3} alt="" />
         <div data-aos="fade-right">
           <img className="mb-8" src={icon} alt="" />
-          <h3 className="font-unbounded text-white text-xl lg:text-3xl mb-24">
+          <h3 className="font-unbounded text-red-700 text-xl lg:text-3xl mb-24">
             {t("xizmatInfo")}
           </h3>
           <Button text={"Bog'lanish"} href={"#contact"} />
         </div>
       </div>
-      <div className="border-b-2 border-black/30 leading-[70px]"></div>
     </div>
   );
 }
