@@ -20,7 +20,7 @@ html {
   scroll-behavior: smooth;
 }
 .heroBg {
-  background: url("../public/image1.png");
+  background: url("../public/hero-image.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;

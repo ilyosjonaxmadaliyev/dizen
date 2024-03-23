@@ -23,7 +23,7 @@ function Header() {
           <img className="h-10 lg:h-12" src={logo} alt="logo" />
         </a>
         <div className="flex gap-5">
-          <ul className="gap-5 font-sansSerif hidden lg:flex">
+          <ul className="md:gap-5 gap-2 font-sansSerif hidden md:flex">
             <li className="hover:text-red-500 text-red-700 font-bold text-lg">
               <a href="#home">{t("asosiy")}</a>
             </li>
@@ -39,19 +39,19 @@ function Header() {
           </ul>
           <select
             onChange={(e) => handleChangeLanguage(e.target.value)}
-            className="font-sansSerif font-bold text-xl"
+            className="font-sansSerif font-bold text-xl text-red-700 md:mr-3"
           >
             <option value="uz">{t("uzb")}</option>
             <option value="ru">{t("rus")}</option>
           </select>
         </div>
-        <span className="hidden lg:flex">
+        <span className="hidden md:flex">
           <Button href="#contact" text={"Bog'lanish"} />
         </span>
         {show && <Navbar setShow={setShow} />}
         <HiMiniBars3
           onClick={() => setShow((prev) => !prev)}
-          className="text-3xl lg:hidden ml-3"
+          className="text-3xl text-red-700 md:hidden ml-3"
         />
       </div>
     </div>
