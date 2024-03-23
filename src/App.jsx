@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -8,9 +8,10 @@ import { Advantages, Faq, Footer, Header, Hero, Services } from "./components";
 import { BsTelephone } from "react-icons/bs";
 
 function App() {
+  const [mode, setMode] = useState(false);
   return (
-    <>
-      <Header />
+    <div className={mode ? "bg-[#120404]" : "bg-white"}>
+      <Header mode={mode} setMode={setMode} />
       <div id="home" className="lg:h-48 md:h-36 h-32"></div>
       <Hero />
       <Advantages />
@@ -22,7 +23,7 @@ function App() {
           <BsTelephone className="border fixed lg:hidden rounded-xl text-white bg-gradient-to-r from-red-700 to-red-300 p-2 text-5xl right-8 bottom-6 z-50" />
         </span>
       </a>
-    </>
+    </div>
   );
 }
 

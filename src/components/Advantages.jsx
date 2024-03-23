@@ -1,6 +1,6 @@
-// import list1 from "../../public/list1.png";
-// import list2 from "../../public/afzal2.png";
-// import list3 from "../../public/afzal3.png";
+import { BsPersonGear } from "react-icons/bs";
+import { GrInProgress } from "react-icons/gr";
+import { FaStudiovinari } from "react-icons/fa";
 import Button from "./Button";
 import { useTranslation } from "react-i18next";
 
@@ -17,9 +17,9 @@ function Advantages() {
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-2 mb-12">
         <div
           data-aos="fade-right"
-          className="mb-12 w-full bg-gradient-to-b from-red-200 to-red-50 p-4 rounded-lg"
+          className="mb-6 w-full bg-gradient-to-b from-red-200 to-red-50 p-4 rounded-lg"
         >
-          <img className="mb-3" src={""} alt="" />
+          <FaStudiovinari className="w-16 h-16 mb-5 text-red-700" />
           <h4 className="font-unbounded text-red-700 text-xl md:text-2xl mb-3">
             {t("afzal1")}
           </h4>
@@ -29,9 +29,9 @@ function Advantages() {
         </div>
         <div
           data-aos="fade-right"
-          className="mb-12 w-full bg-gradient-to-b from-red-200 to-red-50 p-4 rounded-lg"
+          className="mb-6 w-full bg-gradient-to-b from-red-200 to-red-50 p-4 rounded-lg"
         >
-          <img className="mb-3" src={""} alt="" />
+          <BsPersonGear className="w-16 h-16 mb-5 text-red-700" />
           <h4 className="font-unbounded text-red-700 text-xl md:text-2xl mb-3">
             {t("afzal2")}
           </h4>
@@ -41,9 +41,9 @@ function Advantages() {
         </div>
         <div
           data-aos="fade-right"
-          className="mb-12 w-full bg-gradient-to-b from-red-200 to-red-50 p-4 rounded-lg"
+          className="mb-6 w-full bg-gradient-to-b from-red-200 to-red-50 p-4 rounded-lg"
         >
-          <img className="mb-3" src={""} alt="" />
+          <GrInProgress className="w-16 h-16 mb-5 text-red-700" />
           <h4 className="font-unbounded text-red-700 text-xl md:text-2xl mb-3">
             {t("afzal3")}
           </h4>
@@ -53,13 +53,13 @@ function Advantages() {
         </div>
       </div>
       <div className="advantageBg rounded-xl">
-        <div className="grid lg:grid-cols-2  py-16 px-4 lg:py-16 lg:px-32 rounded-xl bg-gradient-to-r from-red-300/20 to-red-100/70 w-full">
-          <div className="hidden lg:flex"></div>
+        <div className="grid md:grid-cols-2  py-16 px-4 lg:py-16 lg:px-32 rounded-xl bg-black/30 md:bg-gradient-to-r from-red-700/30 to-red-50/95 w-full">
+          <div className="hidden md:flex"></div>
           <div data-aos="fade-right" className="">
-            <h3 className="font-unbounded text-red-950 text-2xl md:text-3xl lg:text-3xl mb-7">
+            <h3 className="font-unbounded text-white md:text-red-700 text-2xl md:text-3xl lg:text-4xl mb-7">
               {t("afzalInfo")}
             </h3>
-            <p className="text-lg text-red-900 mb-20 lg:mb-40">
+            <p className="text-2xl text-white md:text-red-600 mb-20 lg:mb-40">
               {t("afzalInfoDoc")}
             </p>
             <Button text={"Bog'lanish"} href={"#contact"} />

@@ -7,9 +7,9 @@ function Footer() {
   const [t] = useTranslation("global");
   return (
     <div className="custom-container">
-      <div id="faq" className="lg:flex mb-14">
+      <div id="faq" className="md:flex">
         <a href="#home" className="mr-auto mb-14">
-          <img className="h-10 lg:h-14" src={logo} alt="" />
+          <img className="h-10 lg:h-14 mb-8" src={logo} alt="" />
         </a>
         <div className="">
           <div className="flex items-center gap-4 mb-4">

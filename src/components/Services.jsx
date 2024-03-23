@@ -56,11 +56,11 @@ function Services() {
           </div>
         </div>
       </div>
-      <div className="grid lg:grid-cols-2 p-6 gap-24 bg-gradient-to-r md:from-red-800 from-red-200 md:to-red-50 to-red-50 mb-24 rounded-xl">
-        <img className="rounded-xl h-full hidden lg:flex" src={image3} alt="" />
+      <div className="grid md:grid-cols-2 p-6 gap-24 bg-gradient-to-r md:from-red-800 from-red-200 md:to-red-50 to-red-50 mb-24 rounded-xl">
+        <img className="rounded-xl h-full hidden md:flex" src={image3} alt="" />
         <div data-aos="fade-right">
           <img className="mb-8" src={icon} alt="" />
-          <h3 className="font-unbounded md:text-red-700 text-red-900 text-base md:text-3xl mb-24">
+          <h3 className="font-unbounded md:text-red-700 text-red-700 text-base sm:text-xl md:text-2xl mb-24">
             {t("xizmatInfo")}
           </h3>
           <Button text={"Bog'lanish"} href={"#contact"} />

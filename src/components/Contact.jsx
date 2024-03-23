@@ -1,19 +1,24 @@
+import { toast } from "react-toastify";
 import contactImage from "../../public/contact-image.png";
 import { useTranslation } from "react-i18next";
+import "react-toastify/dist/ReactToastify.css";
 import { useState } from "react";
 
 function Contact() {
   const [t] = useTranslation("global");
 
-  const [ok, setOk] = useState("");
+  const [name, setName] = useState("");
+  const [phone, setPhone] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setOk("✓ Ssuccess");
-    setTimeout(() => {
-      setOk("");
-    }, 3000);
+    if ((name !== "") & (phone !== "")) {
+      toast.success(t("toast"));
+    }
+    setName("");
+    setPhone("");
   };
+
   return (
     <div
       id="contact"
@@ -28,11 +33,17 @@ function Contact() {
             className="bg-[#F3F6F6] w-full outline-none rounded-xl p-2 mb-6"
             placeholder={t("name")}
             type="text"
+            required
+            value={name}
+            onChange={(e) => setName(e.target.value)}
           />
           <input
             className="bg-[#F3F6F6] w-full outline-none rounded-xl p-2 mb-12"
             placeholder="+998 |"
-            type="number"
+            type="text"
+            required
+            value={phone}
+            onChange={(e) => setPhone(e.target.value)}
           />
           <button
             onClick={handleSubmit}
@@ -40,7 +51,6 @@ function Contact() {
           >
             {t("submit")}
           </button>
-          <p className="text-red-800 text-xl">{ok}</p>
         </form>
       </div>
       <div className="hidden md:block">

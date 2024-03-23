@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { MdArrowOutward } from "react-icons/md";
-import heroImage from "../../public/hero-image.jpg";
+import heroImage from "../../public/hero-image.png";
 import Button from "./Button";
 
 function Hero() {
@@ -10,11 +10,11 @@ function Hero() {
       <div className="rounded-xl grid md:grid-cols-2 heroBg md:bg-none">
         <div className="rounded-xl p-4 lg:p-0 bg-black/50 md:bg-black/0 w-full">
           <div data-aos="fade-right" className=" w-full">
-            <h1 className="text-white md:text-red-800 font-bold font-unbounded text-2xl md:text-4xl lg:text-6xl  mb-11">
+            <h1 className="text-white md:text-red-800 font-bold font-unbounded text-2xl sm:text-3xl md:text-4xl lg:text-6xl  mb-11">
               {t("heroTitle")}
             </h1>
 
-            <p className="text-white md:text-red-600 font-bold font-sansSerif text-sm md:text-base lg:text-xl lg:w-[400px] mb-8 lg:mb-16">
+            <p className="text-white md:text-red-600 font-bold font-sansSerif sm:text-lg md:text-xl lg:text-2xl lg:w-[400px] mb-8 lg:mb-16">
               {t("heroDoc")}
             </p>
 
