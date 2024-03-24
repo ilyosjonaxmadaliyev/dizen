@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { HiMiniBars3 } from "react-icons/hi2";
 import { MdDarkMode } from "react-icons/md";
@@ -7,21 +7,26 @@ import { MdLightMode } from "react-icons/md";
 import Navbar from "./Navbar";
 import Button from "./Button";
 
-import logo from "../../public/logo.jpg";
+import logo from "../../public/logo.png";
 
-function Header({ mode, setMode }) {
+function Header({ toggleDarkMode, darkMode }) {
+  const [show, setShow] = useState(false);
   const [t, i18n] = useTranslation("global");
 
   const handleChangeLanguage = (lng) => {
     i18n.changeLanguage(lng);
+    localStorage.setItem("language", lng);
   };
 
-  const [show, setShow] = useState(false);
+  const handleMode = () => {
+    toggleDarkMode();
+    setMode((prev) => !prev);
+  };
 
   return (
     <div
       className={`py-6 shadow-md w-full fixed z-10 ${
-        mode ? "bg-[#370e0e] shadow-red-300" : "bg-white"
+        darkMode ? "bg-[#370e0e] shadow-red-300" : "bg-white"
       } `}
     >
       <div className="flex w-full items-center lg:justify-between custom-container">
@@ -51,11 +56,8 @@ function Header({ mode, setMode }) {
             <option value="ru">{t("rus")}</option>
           </select>
         </div>
-        <span
-          className="text-xl md:text-3xl mx-2"
-          onClick={() => setMode((prev) => !prev)}
-        >
-          {mode ? (
+        <span className="text-xl md:text-3xl mx-2" onClick={handleMode}>
+          {darkMode ? (
             <MdLightMode className="text-yellow-400" />
           ) : (
             <MdDarkMode className="text-black/70" />
@@ -64,7 +66,7 @@ function Header({ mode, setMode }) {
         <span className="hidden md:flex">
           <Button href="#contact" text={"Bog'lanish"} />
         </span>
-        {show && <Navbar setShow={setShow} mode={mode} />}
+        {show && <Navbar setShow={setShow} mode={darkMode} />}
         <HiMiniBars3
           onClick={() => setShow((prev) => !prev)}
           className="text-3xl text-red-700 md:hidden md:ml-3"

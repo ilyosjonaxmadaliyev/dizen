@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -8,10 +8,21 @@ import { Advantages, Faq, Footer, Header, Hero, Services } from "./components";
 import { BsTelephone } from "react-icons/bs";
 
 function App() {
-  const [mode, setMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(
+    () => localStorage.getItem("darkMode") === "true"
+  );
+
+  useEffect(() => {
+    localStorage.setItem("darkMode", darkMode);
+  }, [darkMode]);
+
+  const toggleDarkMode = () => {
+    setDarkMode((prevMode) => !prevMode);
+  };
+
   return (
-    <div className={mode ? "bg-[#120404]" : "bg-white"}>
-      <Header mode={mode} setMode={setMode} />
+    <div className={darkMode ? "bg-[#120404]" : "bg-white"}>
+      <Header toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
       <div id="home" className="lg:h-48 md:h-36 h-32"></div>
       <Hero />
       <Advantages />

@@ -12,7 +12,7 @@ import ru from "./languages/ru.json";
 
 i18next.init({
   interpolation: { escapeValue: false },
-  lng: "uz",
+  lng: localStorage.getItem("language") || "uz",
   resources: {
     uz: {
       global: uz,
@@ -25,7 +25,7 @@ i18next.init({
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <I18nextProvider i18n={i18next}>
-      <App />
-      <ToastContainer position="top-center" />
+    <App />
+    <ToastContainer position="top-center" />
   </I18nextProvider>
 );

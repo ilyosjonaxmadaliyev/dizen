@@ -19,9 +19,7 @@
 html {
   scroll-behavior: smooth;
 }
-/* body {
-  background-color: #170101;
-} */
+
 .heroBg {
   background: url("../public/hero-image.jpg");
   background-repeat: no-repeat;

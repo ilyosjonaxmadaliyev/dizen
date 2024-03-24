@@ -1,4 +1,4 @@
-import logo from "../../public/logo.jpg";
+import logo from "../../public/logo.png";
 import { IoLocationOutline } from "react-icons/io5";
 import { BsTelephone } from "react-icons/bs";
 import { useTranslation } from "react-i18next";

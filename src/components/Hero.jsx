@@ -26,7 +26,11 @@ function Hero() {
             </div>
           </div>
         </div>
-        <img className=" hidden md:flex h-full" src={heroImage} alt="image" />
+        <img
+          className=" hidden md:flex h-full"
+          src={heroImage}
+          alt="image"
+        />
       </div>
     </div>
   );
