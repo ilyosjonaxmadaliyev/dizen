@@ -3,6 +3,7 @@ import contactImage from "../../public/contact-image.png";
 import { useTranslation } from "react-i18next";
 import "react-toastify/dist/ReactToastify.css";
 import { useState } from "react";
+// import axios from "axios";
 
 function Contact() {
   const [t] = useTranslation("global");
@@ -10,11 +11,31 @@ function Contact() {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
 
+  // let tg = {
+  //   token: "6991375897:AAEUr1q64CQ6oUIqtUqipSl-GgdfCnZa7KA",
+  //   chat_id: "46620414",
+  // };
+
+  // const url = `https://api.telegram.org/bot${tg.token}/sendMessage`;
+
+  // const sendMessageToTelegram = async () => {
+  //   try {
+  //     await axios.post(url, {
+  //       chat_id: tg.chat_id,
+  //       text: phone,
+  //     });
+  //     console.log("Message sent successfully!");
+  //   } catch (error) {
+  //     console.error("Error sending message:", error);
+  //   }
+  // };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     if ((name !== "") & (phone !== "")) {
       toast.success(t("toast"));
     }
+    // sendMessageToTelegram();
     setName("");
     setPhone("");
   };
