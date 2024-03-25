@@ -13,7 +13,7 @@
 
 @layer components {
   .custom-container {
-    @apply mx-auto w-full max-w-[1280px] px-8;
+    @apply mx-auto w-full max-w-[1280px] p-2 md:px-8;
   }
 }
 html {
