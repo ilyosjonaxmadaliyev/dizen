@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 function Footer() {
   const [t] = useTranslation("global");
   return (
-    <div className="custom-container">
+    <div className="custom-container mb-3">
       <div id="faq" className="md:flex">
         <a href="#home" className="mr-auto mb-14">
           <img className="h-10 lg:h-14 mb-8" src={logo} alt="" />
