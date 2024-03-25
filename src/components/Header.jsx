@@ -20,7 +20,6 @@ function Header({ toggleDarkMode, darkMode }) {
 
   const handleMode = () => {
     toggleDarkMode();
-    setMode((prev) => !prev);
   };
 
   return (
