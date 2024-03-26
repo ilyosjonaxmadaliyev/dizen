@@ -63,7 +63,7 @@ function Contact() {
             placeholder="+998 xx xxx xx xx"
             type="text"
             required
-            value={name}
+            value={phone}
             onChange={(e) => setPhone(e.target.value)}
           />
           <button
